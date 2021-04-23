@@ -11,7 +11,6 @@
   }
 
   header {
-    padding: 0;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -47,14 +46,75 @@
     margin-right: 5px;
   }
 
+  .sidebar {
+    display:flex;
+    color: white;
+    font-weight:bold;
+    text-shadow: 2px 2px 5px black;
+    margin: 15px 5px;
+    width: 100px;
+    border-right: 1px solid black;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+  }
   .bio {
     display:flex;
   }
+
   .bio section {
-    max-width:75%;
+    display: flex;
+    flex-direction:column;
+    width:60%;
   }
   .bio img {
+    display: flex;
     margin:10px;
-    max-width: 25%;
+    max-width: 20%;
     box-shadow: 3px 3px 5px black;
   }
+
+  .work{
+    display: flex;
+    width:50%;
+  }
+
+  .project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style:solid;
+  }
+
+  .main {
+    display: flex;
+    width: 100px;
+
+    height: 250px;
+  }
+
+  .secondary {
+    display: flex;
+  }
+
+  .contact {
+    display:flex;
+  }
+
+  .contact section {
+    display: flex;
+  }
+
+  .contact section a {
+    display:flex;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+    font-size: 1.5vw;
+    padding: 0 50px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+
