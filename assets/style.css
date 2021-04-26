@@ -126,11 +126,23 @@
     color: black;
     font-size:larger;
     text-shadow: 1px 1px 5px white;
+    opacity:0.5;
+  }
+  
+  .project button:hover {
+    transform:scale(1.1);
+    opacity:1;
+  }
+  .project.main p {
+    position:relative;
+    top: 315px;
+    left:38%;
   }
 
-  .project p {
+  .project.secondary p {
     position:relative;
-    bottom:0px;
+    top:315px;
+    left:15%;
   }
   .project.main button{
     background-image:url(./images/vending_machine.jpg);
@@ -146,6 +158,8 @@
 
   footer {
     display:flex;
+    position:relative;
+    left:16%;
   }
 
   footer section {
@@ -167,7 +181,7 @@
   .portfolio{
     margin: 10px;
   }
-  .secondary{
+  .project.secondary{
     width:100%;
   }
 }
