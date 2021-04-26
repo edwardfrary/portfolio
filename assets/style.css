@@ -47,6 +47,15 @@
     margin-right: 5px;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-item {
+    display: inline-grid;
+  }
+
   .sidebar {
     display:flex;
     color: white;
@@ -71,13 +80,9 @@
   }
   .bio img {
     margin:10px;
-    width: 300px;
-    height:300px;
+    width:250px;
+    flex-shrink: 0;
     box-shadow: 3px 3px 5px black;
-  }
-
-  .work{
-    display: flex;
   }
 
   .portfolio {
@@ -132,15 +137,14 @@
     background-position:top;
   }
 
-  .contact {
+  footer {
     display:flex;
   }
 
-  .contact section {
+  footer section {
     display: flex;
   }
-
-  .contact section a {
+  footer section a {
     display:flex;
     color: white;
     text-decoration: none;
@@ -150,8 +154,6 @@
     justify-content: space-evenly;
     align-items: center;
   }
-
-
 
 @media screen and (max-width:1120px){
 
