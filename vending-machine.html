@@ -41,6 +41,7 @@
                 <div class="grid-item">
                     <div class="panel">
                         <p>Select your main:</p>
+                        <form>
                         <ul>
                             <li>
                                 <input type="radio" id="burger" name="mainmenu" value="burger">
@@ -59,11 +60,13 @@
                                 <label for="nomain">Nothing</label>
                             </li>
                         </ul>
+                        </form>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="panel">
                         <p>Select your side:</p>
+                        <form>
                         <ul>
                             <li>
                                 <input type="radio" id="fries" name="sidemenu" value="fries">
@@ -83,11 +86,13 @@
                                 <label for="noside">Nothing</label>
                             </li>
                         </ul>
+                        </form>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="panel">
                         <p>Select your drink:</p>
+                        <form>
                         <ul>
                             <li>
                                 <input type="radio" id="soda" name="drinksmenu" value="soda">
@@ -107,11 +112,21 @@
                                 <label for="nodrink">Nothing</label>
                             </li>
                         </ul>
+                        </form>
                     </div>
                 </div>
                 <div class ="grid-item">
                     <div class="panel" style="background-color:yellow;">
                         <p>PAYMENT</p>
+                        <form class="payment-panel">
+                            <label for ="currentmoney">Current Money:</label>
+                            <input type="text"  id ="currentmoney" name="currentmoney" readonly="true"><br>
+                            <label for ="price">Price:</label>
+                            <input type="text" id ="price" name="price" readonly="true"><br>
+                            <input class="payment-button" type="button" id="purchase" onclick="purchase()" value="Purchase"><br>
+                            <input class="payment-button" type="button" id="cancel" onclick="cancel()" value="Cancel"><br>
+                            <input class="payment-button" type="button" id="addmoney" onclick="addMoney()" value="Add Money" style="color:white; background-color:darkgreen;">
+                        </form>
                     </div>
                 </div>
  
@@ -135,6 +150,7 @@
                 </footer>
             </div>
         </div>
+        <script src ="assets/jscript.js"></script>
     </body>
 
 </html>

@@ -185,7 +185,7 @@
   .panel {
     background-color:red;
     color: black;
-    margin: 5px;
+    margin: 2px;
     border-style:solid;
     border-color:black;
   }
@@ -198,6 +198,13 @@
     list-style-type: none;
   }
 
+  .payment-panel {
+    text-align:end;
+  }
+
+  .payment-button {
+    width:35%;
+  }
 @media screen and (max-width:1120px){
 
   .portfolio{
