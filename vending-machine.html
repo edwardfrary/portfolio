@@ -44,19 +44,19 @@
                         <form>
                         <ul>
                             <li>
-                                <input type="radio" id="burger" name="mainmenu" value="burger">
+                                <input type="radio" id="burger" name="mainmenu" value="burger" onclick="buyBurger()">
                                 <label for="burger">Burger</label>
                             </li>
                             <li>
-                                <input type="radio" id="cheeseburger" name="mainmenu" value="cheeseburger">
+                                <input type="radio" id="cheeseburger" name="mainmenu" value="cheeseburger" onclick="buyCburger()">
                                 <label for="cheeseburger">Cheeseburger</label>
                             </li>
                             <li>
-                                <input type="radio" id="hotdog" name="mainmenu" value="hotdog">
+                                <input type="radio" id="hotdog" name="mainmenu" value="hotdog" onclick="buyHotdog()">
                                 <label for="hotdog">Hotdog</label>
                             </li>
                             <li>
-                                <input type="radio" id="nomain" name="mainmenu" value="nothing">
+                                <input type="radio" id="nomain" name="mainmenu" value="nothing" onclick="clearMain()">
                                 <label for="nomain">Nothing</label>
                             </li>
                         </ul>
@@ -120,10 +120,10 @@
                         <p>PAYMENT</p>
                         <form class="payment-panel">
                             <label for ="currentmoney">Current Money:</label>
-                            <input type="text"  id ="currentmoney" name="currentmoney" readonly="true"><br>
+                            <input class="currency-box" type="text"  id ="currentmoney" name="currentmoney" readonly="true"><br>
                             <label for ="price">Price:</label>
-                            <input type="text" id ="price" name="price" readonly="true"><br>
-                            <input class="payment-button" type="button" id="purchase" onclick="purchase()" value="Purchase"><br>
+                            <input class ="currency-box" type="text" id ="price" name="price"><br>
+                            <input class="payment-button" type="button" id="purchase" onclick="purchases()" value="Purchase"><br>
                             <input class="payment-button" type="button" id="cancel" onclick="cancel()" value="Cancel"><br>
                             <input class="payment-button" type="button" id="addmoney" onclick="addMoney()" value="Add Money" style="color:white; background-color:darkgreen;">
                         </form>
