@@ -69,20 +69,20 @@
                         <form>
                         <ul>
                             <li>
-                                <input type="radio" id="fries" name="sidemenu" value="fries">
+                                <input type="radio" id="fries" name="sidemenu" value="fries" onclick="buyFries()">
                                 <label for="fries">Fries</label>
                             </li>
 
                             <li>
-                                <input type="radio" id="salad" name="sidemenu" value="salad">
+                                <input type="radio" id="salad" name="sidemenu" value="salad" onclick="buySalad()">
                                 <label for="salad">Side-Salad</label>
                             </li>
                             <li>
-                                <input type="radio" id="chips" name="sidemenu" value="chips">
+                                <input type="radio" id="chips" name="sidemenu" value="chips" onclick="buyChips()">
                                 <label for="chips">Chips</label>
                             </li>
                             <li>
-                                <input type="radio" id="noside" name="sidemenu" value="nothing">
+                                <input type="radio" id="noside" name="sidemenu" value="nothing" onclick="clearSide()">
                                 <label for="noside">Nothing</label>
                             </li>
                         </ul>
@@ -95,20 +95,20 @@
                         <form>
                         <ul>
                             <li>
-                                <input type="radio" id="soda" name="drinksmenu" value="soda">
+                                <input type="radio" id="soda" name="drinksmenu" value="soda" onclick="buySoda()">
                                 <label for="soda">Soda</label>
                             </li>
 
                             <li>
-                                <input type="radio" id="dietsoda" name="drinksmenu" value="dietsoda">
+                                <input type="radio" id="dietsoda" name="drinksmenu" value="dietsoda" onclick="buyDietSoda()">
                                 <label for="dietsoda">Diet Soda</label>
                             </li>
                             <li>
-                                <input type="radio" id="water" name="drinksmenu" value="water">
+                                <input type="radio" id="water" name="drinksmenu" value="water" onclick="buyWater()">
                                 <label for="water">Water</label>
                             </li>
                             <li>
-                                <input type="radio" id="nodrink" name="drinksmenu" value="nothing">
+                                <input type="radio" id="nodrink" name="drinksmenu" value="nothing" onclick="clearDrink()">
                                 <label for="nodrink">Nothing</label>
                             </li>
                         </ul>
@@ -123,8 +123,8 @@
                             <input class="currency-box" type="text"  id ="currentmoney" name="currentmoney" readonly="true"><br>
                             <label for ="price">Price:</label>
                             <input class ="currency-box" type="text" id ="price" name="price"><br>
-                            <input class="payment-button" type="button" id="purchase" onclick="purchases()" value="Purchase"><br>
-                            <input class="payment-button" type="button" id="cancel" onclick="cancel()" value="Cancel"><br>
+                            <input class="payment-button" type="button" id="purchase" onclick="buy()" value="Purchase"><br>
+                            <input class="payment-button" type="button" id="cancel" onclick="window.location.reload();" value="Cancel"><br>
                             <input class="payment-button" type="button" id="addmoney" onclick="addMoney()" value="Add Money" style="color:white; background-color:darkgreen;">
                         </form>
                     </div>
