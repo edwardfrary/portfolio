@@ -54,6 +54,7 @@
 
   .vendor-panels {
     grid-template-columns: 150px auto auto auto 350px;
+    background-color: silver;
   }
 
   .grid-item {
@@ -185,6 +186,8 @@
     background-color:darkred;
     color: white;
     margin: 5px;
+    border-style:solid;
+    border-color:black;
   }
 
   .panel ul{
