@@ -183,13 +183,17 @@
   }
 
   .panel {
-    background-color:darkred;
-    color: white;
+    background-color:red;
+    color: black;
     margin: 5px;
     border-style:solid;
     border-color:black;
   }
-
+  .panel p{
+    color:black;
+    text-align:center;
+    text-decoration:underline;
+  }
   .panel ul{
     list-style-type: none;
   }
