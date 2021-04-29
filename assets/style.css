@@ -12,6 +12,7 @@
 
   header {
     margin: 15px;
+    background-color:darkgray;
     display: flex;
     flex-wrap: wrap;
     position:sticky;  
@@ -60,8 +61,12 @@
   .grid-item {
     display: inline-grid;
   }
+  
+  .grid-item2 {
+    display: inline-grid;
+  }
 
-  .grid-item ul li:hover{
+  .grid-item2 ul li:hover{
     transform:scale(1.1);
     background-color: white;
   }
@@ -82,6 +87,15 @@
     align-items: center;
     justify-content: center;
   }
+
+  section p {
+    font-size:larger;
+  }
+
+  section p span {
+    font-weight:bold;
+  }
+
   .bio {
     display:flex;
     justify-content:space-evenly;
@@ -95,6 +109,7 @@
   .bio img {
     margin:10px;
     width:250px;
+    height:250px;
     flex-shrink: 0;
     box-shadow: 3px 3px 5px black;
   }
